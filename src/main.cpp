@@ -98,7 +98,7 @@ void loop() {
                     Serial.println("Seek forward");
                     BootKeyboard.write(KEY_F);
                     break;
-                case 0x93A:
+                case 0x30:
                     Serial.println("Prev");
                     BootKeyboard.write(KEY_PAGE_DOWN);
                     break;
@@ -116,9 +116,9 @@ void loop() {
                     break;
                 case 0x2E:
                     Serial.println("On");
-                    pinMode(5, OUTPUT);
+                    pinMode(4, OUTPUT);
                     delay(100);
-                    pinMode(5, INPUT);
+                    pinMode(4, INPUT);
                     break;
                 case 0x2F:
                     Serial.println("Off");
