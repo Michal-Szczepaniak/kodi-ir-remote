@@ -126,6 +126,14 @@ void loop() {
                     BootKeyboard.press(KEY_1);
                     BootKeyboard.releaseAll();
                     break;
+                case 0x611B2792:
+                    Serial.println("F2");
+                    BootKeyboard.write(KEY_F2);
+                    break;
+                case 0x69FE358E:
+                    Serial.println("F3");
+                    BootKeyboard.write(KEY_F3);
+                    break;
                 case 0x9998E1D2:
                     Serial.println("F4");
                     BootKeyboard.press(KEY_LEFT_ALT);
