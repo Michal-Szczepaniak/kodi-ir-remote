@@ -69,9 +69,11 @@ void loop() {
             switch (IrReceiver.decodedIRData.decodedRawData) {
                 case 0xBB448672:
 //                    Serial.println("Channel+");
+                    BootKeyboard.write(KEY_F5);
                     break;
                 case 0xC99E0576:
 //                    Serial.println("Channel-");
+                    BootKeyboard.write(KEY_F6);
                     break;
                 case 0x8BC2B5F1:
 //                    Serial.println("Volume+");
